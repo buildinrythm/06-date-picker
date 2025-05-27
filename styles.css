@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: ;
+}
 .calendar-container{
   display: flex;
   flex-direction: column;
@@ -7,14 +12,23 @@
 }
 
 .calendar-box{
-  border: 2px solid red;
+  border: 2px solid black;
 }
+
 .row-1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+  border-bottom:none ;
+  width: 300px;
+}
+.row-2{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  border: 2px solid black;
+  width: 300px;
+  gap: 10px;
 }
 .calendar-grid{
     display: grid;
