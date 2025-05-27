@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: ;
+  padding: 0;
 }
 .calendar-container{
   display: flex;
@@ -9,32 +9,45 @@
   justify-content: center;
   align-items: center;
   border: 2px solid red;
+  height: 500px;
 }
 
 .calendar-box{
-  border: 2px solid black;
+  width: 300px;
 }
 
+.year-format {
+  padding-left: 10px;
+}
 .row-1{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   border: 2px solid black;
   border-bottom:none ;
   width: 300px;
 }
+
+.calendar-icon {
+  border-left: 2px solid black;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
 .row-2{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 100%;
   gap: 10px;
+  border: 2px solid black;
+  border-bottom: none;
 }
 .calendar-grid{
     display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 50px);
-  width: 300px;
+  width: 100%;
 }
 
 .day-label {
@@ -47,6 +60,13 @@
 
 .day:nth-child(7n + 8) {
   /* Starts at cell 8 (first .num), every 7 after */
-  border-left: 1px solid black;
+  border-left: 2px solid black;
 }
 
+.bl {
+  border-left: 2px solid black;
+}
+
+.br {
+  border-right: 2px solid black;
+}
