@@ -1,6 +1,25 @@
+.calendar-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.calendar-box{
+  border: 2px solid red;
+}
+.row-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border: 2px solid black;
+}
 .calendar-grid{
     display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 100px);
+  width: 500px;
 }
 
