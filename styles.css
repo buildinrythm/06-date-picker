@@ -19,7 +19,20 @@
 .calendar-grid{
     display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 100px);
-  width: 500px;
+  grid-template-rows: repeat(5, 50px);
+  width: 300px;
+}
+
+.day-label {
+  border-bottom: 2px solid black;
+}
+.day{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.day:nth-child(7n + 8) {
+  /* Starts at cell 8 (first .num), every 7 after */
+  border-left: 1px solid black;
 }
 
