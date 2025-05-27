@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 1.2rem; /* make numbers a bit bigger */
+  font-weight: bold; /* optional for emphasis */
 }
 .calendar-container{
   display: flex;
@@ -36,12 +38,13 @@
 }
 .row-2{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   gap: 10px;
   border: 2px solid black;
   border-bottom: none;
+  padding: 10px;
 }
 .calendar-grid{
     display: grid;
@@ -71,3 +74,8 @@
   border-right: 2px solid black;
 }
 
+.day, .day-label {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+}
